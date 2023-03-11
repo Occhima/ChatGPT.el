@@ -10,7 +10,7 @@ bot = None
 @server.register_function
 def query(query):
     global bot
-    if bot == None:
+    if bot is None:
         bot = ChatGPT()
     return bot.ask(query)
 
